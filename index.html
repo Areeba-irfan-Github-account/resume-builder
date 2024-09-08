@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="resume-form">
+            <div>
+                <h1>Build Your Resume</h1>
+            </div>
+            <div>
+               
+                <div id="sidebar" class="sidebar">
+                    <header>
+                        <h2> Personal Info</h2>
+                        <input type="text " id="name" placeholder="write here your name" required>
+                        <input type="text " id="About" placeholder="write about your self in 120 words" required>
+                        <input type="email " id="email" placeholder="Email" required>
+                        <input type="number" id="phone" placeholder="Phone" required>
+                    </header>
+                </div>
+                <section>
+                    <h2>About</h2>
+                    <textarea id="About" placeholder="Write about your self" required></textarea>
+                </section>
+                <section></section>
+                <h2>Education</h2>
+                <textarea id="Education" placeholder="Education Details" required></textarea>
+                </section>
+                <section></section>
+                <h2>work-experience</h2>
+                <textarea id="work-experience" placeholder="work-experience" required></textarea>
+                </section>
+                <section></section>
+                <h2>Skill</h2>
+                <textarea id="skills" placeholder="Your Skills" required></textarea>
+                </section>
+                
+                <button id="toggleSidebar">click Here</button>
+                <br>
+                <br>
+                <button id="resume" type="submit">Generate Resume</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+// Sliding Section
+document.getElementById('toggleSidebar').addEventListener('click', function() {
+  var sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('visible');
+});
+
+</script>
+
+</html>
